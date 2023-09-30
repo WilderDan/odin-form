@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+main {
+  display: flex;
+  width: clamp(700px, 80vw, 1400px);
+}
+
+.branding {
+  flex: 7;
+  background-color: red;
+  min-height: 100vh;
+}
+
+.signUp {
+  flex: 13;
+  background-color: blue;
+  min-height: 100vh;
+}
