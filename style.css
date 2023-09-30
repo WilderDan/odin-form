@@ -7,22 +7,29 @@
 body {
   display: flex;
   justify-content: center;
+  background-image: url("./images/city.png");
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: black;
 }
 
 main {
   display: flex;
   width: clamp(700px, 80vw, 1400px);
+  /*background-color: rgba(0, 0, 0, 0.7);*/
+  min-height: 100vh;
+  align-items: center;
 }
 
 .branding {
   flex: 7;
-  background-color: red;
-  min-height: 100vh;
+}
+
+#dinoImage {
+  width: 100%;
+  aspect-ratio: 1/1;
 }
 
 .signUp {
   flex: 13;
-  background-color: blue;
-  min-height: 100vh;
 }
