@@ -90,6 +90,7 @@ input {
 
 input:focus {
   background-color: var(--neonPink);
+  color: #fff;
 }
 
 .buttonContainer {

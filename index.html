@@ -29,7 +29,7 @@
       </section>
       <section class="signUp">
         <h1 class="neonText">Sign Up!</h1>
-        <form id="mainFrom" action="./index.html" method="post">
+        <form id="mainForm" action="" method="">
           <div class="labelContainer">
             <label for="userName">Name</label>
             <label for="email">Email</label>
@@ -38,15 +38,15 @@
           </div>
 
           <div class="inputContainer">
-            <input id="userName" type="text" />
-            <input id="email" type="email" />
-            <input id="password" type="password" />
-            <input id="confirmPassword" type="password" />
+            <input id="userName" type="text" required />
+            <input id="email" type="email" required />
+            <input id="password" type="password" required />
+            <input id="confirmPassword" type="password" required />
           </div>
         </form>
 
         <div class="buttonContainer">
-          <button type="submit" form="mainForm">Submit</button>
+          <button id="submitBtn" type="submit" form="mainForm">Submit</button>
         </div>
       </section>
     </main>
