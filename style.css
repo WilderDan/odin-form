@@ -10,7 +10,7 @@
   --neonShadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f09,
     0 0 82px var(--neonPink), 0 0 92px var(--neonPink),
     0 0 102px var(--neonPink), 0 0 151px var(--neonPink);
-  --formGap: 2vh;
+  --gap: 2vh;
 }
 
 body {
@@ -26,66 +26,72 @@ main {
   flex-wrap: wrap;
   align-content: space-around;
   width: clamp(400px, 80vw, 1400px);
-  gap: 5vw;
+  gap: var(--gap);
   background-color: rgba(0, 0, 0, 0.5);
   box-shadow: var(--neonShadow);
-  padding: 5vh 1vw;
+  padding: 5vh 3vw;
+  margin: 1vh 1vw;
 }
 
 .branding {
   flex: 2;
   display: flex;
   flex-direction: column;
-  gap: 4vh;
+  gap: var(--gap);
   align-items: center;
+  justify-content: space-between;
 }
 
 .neonText {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-family: "Tilt Neon", cursive;
   text-align: center;
   color: var(--neonPink);
   text-shadow: var(--neonShadow);
 }
 
+.imgContainer {
+  display: flex;
+  justify-content: center;
+}
+
 #dinoImage {
-  width: 100%;
   aspect-ratio: 1/1;
-  max-width: 300px;
+  /*width: clamp(250px, 30%, 300px);*/
+  width: 250px;
 }
 
 .signUp {
   flex: 3;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 3rem;
   min-width: 400px;
 }
 
 form {
-  margin: 3vh;
   display: flex;
   gap: 5vw;
-  overflow: hidden;
+  flex: 1;
+  justify-content: center;
 }
 
 .labelContainer,
 .inputContainer {
   display: flex;
   flex-direction: column;
-  gap: var(--formGap);
+  gap: var(--gap);
   justify-content: space-between;
 }
 
 label {
-  font-size: 1.7rem;
+  font-size: 1.25rem;
   color: white;
   display: block;
 }
 
 input {
-  font-size: 1.5rem;
-  display: block;
+  width: 100%;
 }
 
 input:focus {

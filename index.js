@@ -1,14 +1,14 @@
 const submitBtn = document.getElementById("submitBtn");
 
 submitBtn.addEventListener("click", (e) => {
-  e.preventDefault();
+  //  e.preventDefault();
   validateName();
   validateEmail();
   validatePassword();
 });
 
 function validateName() {
-  console.log("name");
+  const name = document.getElementById("userName").value;
 }
 
 function validateEmail() {
