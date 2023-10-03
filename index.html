@@ -30,19 +30,22 @@
       <section class="signUp">
         <h1 class="neonText">Sign Up!</h1>
         <form id="mainForm" action="" method="">
-          <div class="labelContainer">
-            <label for="userName">Name</label>
-            <label for="email">Email</label>
-            <label for="password">Password</label>
-            <label for="confirmPassword">Confirm Password</label>
+          <div class="formControlContainer">
+            <div class="labelContainer">
+              <label for="userName">Name</label>
+              <label for="email">Email</label>
+              <label for="password">Password</label>
+              <label for="confirmPassword">Confirm Password</label>
+            </div>
+            <div class="inputContainer">
+              <input id="userName" type="text" required />
+              <input id="email" type="email" required />
+              <input id="password" type="password" required />
+              <input id="confirmPassword" type="password" required />
+            </div>
           </div>
 
-          <div class="inputContainer">
-            <input id="userName" type="text" required />
-            <input id="email" type="email" required />
-            <input id="password" type="password" required />
-            <input id="confirmPassword" type="password" required />
-          </div>
+          <p id="passwordErrorMessage">* Passwords do not match</p>
         </form>
 
         <div class="buttonContainer">
