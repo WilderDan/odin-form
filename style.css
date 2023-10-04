@@ -19,7 +19,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #2c2c32;
-  background-image: url("images/city.png");
+  background-image: url("./images/city.png");
   background-position: center;
   background-repeat: no-repeat;
 }
