@@ -4,8 +4,15 @@ submitBtn.addEventListener("click", (e) => {
 });
 
 window.addEventListener("submit", (e) => {
-  console.log("Form submitted.");
   e.preventDefault();
+
+  const welcome = document.createElement("h1");
+  welcome.classList.add("neonText");
+  welcome.textContent = `Welcome ${e.target[0].value}!`;
+
+  const signUp = document.getElementById("signUp");
+  while (signUp.firstChild) signUp.removeChild(signUp.firstChild);
+  signUp.appendChild(welcome);
 });
 
 window.addEventListener("keyup", (e) => {
