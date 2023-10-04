@@ -19,6 +19,9 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #2c2c32;
+  background-image: url("images/city.png");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 main {
@@ -27,7 +30,7 @@ main {
   align-content: space-around;
   width: clamp(400px, 80vw, 1400px);
   gap: var(--gap);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.85);
   box-shadow: var(--neonShadow);
   padding: 5vh 3vw;
   margin: 1vh 1vw;
